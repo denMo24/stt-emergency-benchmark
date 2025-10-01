@@ -1,5 +1,26 @@
 # MongoDB Export: `transcripts_denis`
 
+### MongoDB Dump (split into parts)
+
+The MongoDB dump `transcripts_denis_dump.zip` was split into multiple parts (<100 MB each) to comply with GitHub’s file size limit.
+
+To reconstruct the original file, run the following in the folder `mongodb/`:
+
+```bash
+cat transcripts_denis_dump.zip.part_* > transcripts_denis_dump.zip
+```
+
+Then extract it:
+
+```bash
+unzip transcripts_denis_dump.zip
+```
+
+
+
+---
+
+
 This folder contains the MongoDB collection **`transcriptions.transcripts_denis`**, exported as a zipped dump (`transcripts_denis.zip`).  
 It is provided for reproducibility of the STT benchmarking experiments.
 
