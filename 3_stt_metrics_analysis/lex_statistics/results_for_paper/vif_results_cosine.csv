@@ -1,0 +1,14 @@
+variable,VIF
+Intercept,13.000000000000009
+C(system)[T.whisper–large],1.6666666666666667
+C(system)[T.whisper–medium],1.6666666666666665
+C(system)[T.whisper–turbo],1.6666666666666667
+C(system)[T.vosk–vosk-model-de-0.21],1.6666666666666667
+C(system)[T.whisper_v2–whisper_rescuespeech],1.6666666666666665
+C(ambientVariant)[T.insideAmbulance],1.5
+C(ambientVariant)[T.insideCrowded],1.4999999999999998
+C(ambientVariant)[T.talking],1.4999999999999998
+C(processedVolume)[T.-15dBFS],1.6000000000000005
+C(processedVolume)[T.-20dBFS],1.6000000000000005
+C(processedVolume)[T.-25dBFS],1.6000000000000003
+C(processedVolume)[T.-30dBFS],1.6

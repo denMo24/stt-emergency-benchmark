@@ -1,0 +1,42 @@
+name: speechbrain-fix
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - ffmpeg
+  - libsndfile
+  - sox
+  - pysoundfile
+  - torchaudio
+  - jupyterlab
+  - pymongo==4.13.0
+  - conda-forge::num2words
+  - conda-forge::ace
+  - conda-forge::acstools
+  - jupyter
+  - matplotlib
+  - pandas
+  - nltk
+  - conda-forge::spacy
+  - conda-forge::tiktoken
+  - conda-forge::seaborn
+  - anaconda::scipy
+  - conda-forge::pygam
+  - conda-forge::r-mgcv
+  - conda-forge::bambi
+  - powerai::sacrebleu
+  - transformers
+  - pytorch
+  - torchvision
+  - conda-forge::openai
+  - conda-forge::spacy-model-en_core_web_sm
+  - conda-forge::openpyxl
+  - conda-forge::spacy-model-de_core_news_sm
+  - conda-forge::shap
+  - conda-forge::lime
+  - clangxx
+  - cmake
+  - llvm
+  - cmdstanpy
+  - anaconda::scikit-learn
+prefix: /opt/anaconda3/envs/speechbrain-fix
