@@ -1,0 +1,7 @@
+﻿System,N,Mittel-WER,SD(%)
+recapp-gsw-CH_smoothed,1980,0.08,0.07
+vosk-vosk-model-de-0.21,1980,0.24,0.18
+whisper-large,1980,0.16,0.08
+whisper-medium,1980,0.12,0.09
+whisper-turbo,1980,0.11,0.09
+whisper_v2-whisper_rescuespeech,1980,0.6,0.1

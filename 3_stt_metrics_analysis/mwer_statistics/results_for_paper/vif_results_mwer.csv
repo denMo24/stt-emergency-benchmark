@@ -1,0 +1,13 @@
+variable,VIF
+system_whisper–large,0.000777000777000777
+system_whisper–medium,0.0007770007770007769
+system_whisper–turbo,0.0007770007770007769
+system_vosk–vosk-model-de-0.21,0.0007770007770007766
+system_whisper_v2–whisper_rescuespeech,0.0007770007770007769
+ambientVariant_insideAmbulance,0.0005698005698005698
+ambientVariant_insideCrowded,0.0005698005698005699
+ambientVariant_talking,0.0005698005698005699
+processedVolume_-15dBFS,0.0006798756798756801
+processedVolume_-20dBFS,0.0006798756798756798
+processedVolume_-25dBFS,0.00067987567987568
+processedVolume_-30dBFS,0.0006798756798756801
