@@ -1,0 +1,75 @@
+# Generated 2023-06-24 from:
+# /netscratch/sagar/thesis/speechbrain/recipes/RescueSpeech/ASR/transformer/hparams/train_hf_whisper.yaml
+# yamllint disable
+# ################################
+# Model: Whisper (Encoder-Decoder) + NLL
+# Augmentation: TimeDomainSpecAugment
+# Authors: Sangeet Sagar 2022
+# ################################
+
+
+# URL for the biggest Fairseq english whisper model.
+whisper_hub: openai/whisper-large-v2
+language: german
+
+# Normalize the english inputs with
+# the same normalization done in the paper
+normalized_transcripts: true
+test_only: false # Set it to True if you only want to  do the evaluation
+
+auto_mix_prec: False
+sample_rate: 16000
+
+# These values are only used for the searchers.
+# They needs to be hardcoded and should not be changed with Whisper.
+# They are used as part of the searching process.
+# The bos token of the searcher will be timestamp_index
+# and will be concatenated with the bos, language and task tokens.
+timestamp_index: 50363
+#eos_index: 50257
+#bos_index: 50258
+
+# Decoding parameters
+min_decode_ratio: 0.0
+max_decode_ratio: 0.1
+test_beam_size: 8
+
+# Model parameters
+freeze_whisper: True
+freeze_encoder: True
+
+
+
+whisper: !new:speechbrain.lobes.models.huggingface_transformers.whisper.Whisper
+    source: !ref <whisper_hub>
+    freeze: !ref <freeze_whisper>
+    freeze_encoder: !ref <freeze_encoder>
+    save_path: whisper_checkpoints
+    encoder_only:  False
+
+
+
+decoder: !new:speechbrain.decoders.seq2seq.S2SWhisperGreedySearcher
+    model: !ref <whisper>
+#   bos_index: !ref <timestamp_index>
+#   eos_index: !ref <eos_index>
+    min_decode_ratio: !ref <min_decode_ratio>
+    max_decode_ratio: !ref <max_decode_ratio>
+
+# test_beam_searcher: !new:speechbrain.decoders.seq2seq.S2SWhisperBeamSearcher
+#     module: [!ref <whisper>]
+#     bos_index: !ref <timestamp_index>
+#     eos_index: !ref <eos_index>
+#     min_decode_ratio: !ref <min_decode_ratio>
+#     max_decode_ratio: !ref <max_decode_ratio>
+#     beam_size: !ref <test_beam_size>
+
+
+modules:
+    whisper: !ref <whisper>
+    decoder:  !ref <decoder>
+ 
+
+pretrainer: !new:speechbrain.utils.parameter_transfer.Pretrainer
+    loadables:
+        whisper: !ref <whisper>

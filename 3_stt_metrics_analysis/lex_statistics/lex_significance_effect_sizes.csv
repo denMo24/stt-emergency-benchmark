@@ -1,0 +1,16 @@
+﻿System A,System B,Test,p-value,Cohen's d
+recapp_gsw-CH_smoothed,vosk_vosk-model-de-0.21,Wilcoxon,8.710529354464114e-268,1.1400201179813534
+recapp_gsw-CH_smoothed,whisper_large,Wilcoxon,1.1741213029834083e-203,0.5939392614294786
+recapp_gsw-CH_smoothed,whisper_medium,Wilcoxon,1.0314869717640397e-240,0.7477277327071464
+recapp_gsw-CH_smoothed,whisper_turbo,Wilcoxon,1.0558802289951313e-212,0.6234639109645466
+recapp_gsw-CH_smoothed,whisper_v2_whisper_rescuespeech,Wilcoxon,0.0,4.010399219412492
+vosk_vosk-model-de-0.21,whisper_large,Wilcoxon,2.9496975133566914e-153,-0.6040971556539948
+vosk_vosk-model-de-0.21,whisper_medium,Wilcoxon,1.0541036282800422e-54,-0.2952972223854023
+vosk_vosk-model-de-0.21,whisper_turbo,Wilcoxon,6.217475562325439e-116,-0.4759524502183395
+vosk_vosk-model-de-0.21,whisper_v2_whisper_rescuespeech,Wilcoxon,0.0,1.8402934486984626
+whisper_large,whisper_medium,Wilcoxon,7.210363733612132e-81,0.34235358670321747
+whisper_large,whisper_turbo,Wilcoxon,3.8839828101483124e-08,0.13550570986266827
+whisper_large,whisper_v2_whisper_rescuespeech,Wilcoxon,0.0,2.3949488156299927
+whisper_medium,whisper_turbo,Wilcoxon,8.528533172778492e-69,-0.21529276205512599
+whisper_medium,whisper_v2_whisper_rescuespeech,Wilcoxon,1.4717731075003634e-306,1.8299714142266763
+whisper_turbo,whisper_v2_whisper_rescuespeech,Wilcoxon,0.0,2.0495403534303933

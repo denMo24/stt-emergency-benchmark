@@ -1,0 +1,16 @@
+feature,mean_abs_shap
+system_whisper_v2–whisper_rescuespeech,0.11852988045482964
+processedVolume_-15dBFS,0.06706993964848235
+ambientVariant_insideCrowded,0.02382594627190848
+processedVolume_-20dBFS,0.021276453668723286
+system_vosk–vosk-model-de-0.21,0.018189942406005508
+system_recapp–gsw-CH_smoothed,0.00782170509462895
+ambientVariant_trafficOutside,0.005013016818548627
+processedVolume_-25dBFS,0.003911166603195494
+system_whisper–turbo,0.0030471381842492465
+system_whisper–medium,0.002606555390701514
+processedVolume_-35dBFS,0.0021601256730478056
+ambientVariant_insideAmbulance,0.0019564220867721847
+ambientVariant_talking,0.0016658619367946376
+processedVolume_-30dBFS,0.001297821431188427
+system_whisper–large,0.000755977112245805

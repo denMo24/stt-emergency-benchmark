@@ -1,0 +1,1 @@
+In order to build you need to download MRCONSO.RRF (https://www.nlm.nih.gov/research/umls/new_users/online_learning/Meta_006.html). This file cannot be saved in repo since it too large (2.1GB)

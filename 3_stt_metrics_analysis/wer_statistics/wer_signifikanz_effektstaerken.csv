@@ -1,0 +1,16 @@
+﻿Vergleich,Test-Typ,p-Wert,Cohen's d
+recapp-gsw-CH_smoothed vs vosk-vosk-model-de-0.21,Wilcoxon,0.00e+00,-1.27
+recapp-gsw-CH_smoothed vs whisper-large,Wilcoxon,6.85e-307,-1.34
+recapp-gsw-CH_smoothed vs whisper-medium,Wilcoxon,0.00e+00,-1.33
+recapp-gsw-CH_smoothed vs whisper-turbo,Wilcoxon,1.02e-272,-0.88
+recapp-gsw-CH_smoothed vs whisper_v2-whisper_rescuespeech,Wilcoxon,0.00e+00,-8.6
+vosk-vosk-model-de-0.21 vs whisper-large,Wilcoxon,1.62e-105,0.57
+vosk-vosk-model-de-0.21 vs whisper-medium,Wilcoxon,2.89e-305,1.0
+vosk-vosk-model-de-0.21 vs whisper-turbo,Wilcoxon,0.00e+00,1.13
+vosk-vosk-model-de-0.21 vs whisper_v2-whisper_rescuespeech,Wilcoxon,0.00e+00,-3.38
+whisper-large vs whisper-medium,Wilcoxon,9.96e-118,0.58
+whisper-large vs whisper-turbo,Wilcoxon,7.24e-189,0.79
+whisper-large vs whisper_v2-whisper_rescuespeech,paired t-Test,0.00e+00,-5.28
+whisper-medium vs whisper-turbo,Wilcoxon,1.17e-81,0.41
+whisper-medium vs whisper_v2-whisper_rescuespeech,Wilcoxon,0.00e+00,-7.74
+whisper-turbo vs whisper_v2-whisper_rescuespeech,paired t-Test,0.00e+00,-7.73

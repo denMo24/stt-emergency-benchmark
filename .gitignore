@@ -1,0 +1,54 @@
+# ==========================================
+#  Notebook Checkpoints
+# ==========================================
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ==========================================
+#  Large Files (Models, Audio, Dumps)
+# ==========================================
+*.onnx
+**/*.onnx
+
+mongodb/
+mongodb/*
+
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+Thumbs.db
+
+2_stt_speechbrain_only/results_speechbrain/
+
+
+# ==========================================
+#  Project-specific Generated Files
+# ==========================================
+lexikon_ATC-Bedeutung_final_noarticles.csv
+lexikon_cleaned_ger_synonyms.csv
+lexikon_deDE15LinguisticVariant_final_noarticles.csv
+mwer_statistics/lexikon_*.csv
+
+# ==========================================
+#  Python Cache / Build Artifacts
+# ==========================================
+__pycache__/
+*.pyc
+*.pyo
+
+# ==========================================
+#  OS / Editor Files
+# ==========================================
+.DS_Store
+Thumbs.db
+
+
+# -------------------------------------
+# Lexica tables (not distributed)
+# -------------------------------------
+3_stt_metrics_analysis/mwer_statistics/building_mwer/make_lookup_tables/Diagnoses_Complaints/*.csv
+3_stt_metrics_analysis/mwer_statistics/building_mwer/make_lookup_tables/Diagnoses_Complaints/*.xlsx
+3_stt_metrics_analysis/mwer_statistics/building_mwer/make_lookup_tables/Diagnoses_Complaints/*.json
+3_stt_metrics_analysis/mwer_statistics/building_mwer/make_lookup_tables/Procedures_Drugs/ATC_Drugs/
